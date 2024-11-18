@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navegación en Internet</title>
-    <style>
+    <link rel="icon" href="icon.png" type="image/png">
+
+        <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -51,12 +53,20 @@
             width: 100%;
             bottom: 0;
         }
+        #footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
     </style>
 </head>
-<body>
 
     <header>
-        <h1>Navegación en Internet</h1>
+        <h1>© Navegación en Internet</h1>
     </header>
 
     <nav>
@@ -64,33 +74,450 @@
         <a href="#envio">Envío de Información a Sitios Web</a>
         <a href="#descarga">Descarga Segura de Archivos</a>
         <a href="#exploracion">Exploración de Sitios</a>
+	<li><a href="#integrantes">Integrantes</a></li>
     </nav>
 
     <main>
         <section id="acceso">
-            <h2>Acceso a Sitios Web</h2>
-            <p>Para acceder a un sitio web, es necesario escribir su dirección en la barra de direcciones del navegador. Esta dirección se llama URL (Uniform Resource Locator) y puede ser una dirección simple o incluir protocolos como HTTP o HTTPS.</p>
-        </section>
+    <h2>Acceso a Sitios Web</h2>
+    <p>
+        El acceso a sitios web es el proceso mediante el cual un usuario interactúa con contenido alojado en Internet. 
+        Este concepto abarca múltiples aspectos técnicos, legales y de experiencia del usuario. Aquí se presenta un resumen 
+        de los elementos clave relacionados con el acceso a sitios web:
+    </p>
+
+    <hr>
+    
+    <h3>1. Infraestructura para el Acceso</h3>
+    <ul>
+        <li><strong>Internet y Protocolo HTTP/HTTPS:</strong> Los sitios web funcionan en la red global de Internet utilizando 
+            protocolos como HTTP y HTTPS (este último garantiza una conexión segura mediante cifrado).</li>
+        <li><strong>Servidores y DNS:</strong> Los servidores web alojan contenido accesible mediante nombres de dominio, los cuales 
+            son traducidos por el Sistema de Nombres de Dominio (DNS).</li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Factores que Afectan el Acceso</h3>
+    <ul>
+        <li><strong>Disponibilidad del Sitio:</strong>
+            <ul>
+                <li>Errores del servidor: Como el 404 (página no encontrada) o el 500 (error interno del servidor).</li>
+                <li>Mantenimiento o fallos técnicos.</li>
+            </ul>
+        </li>
+        <li><strong>Conectividad del Usuario:</strong>
+            <ul>
+                <li>Velocidad de conexión a Internet.</li>
+                <li>Uso de redes privadas virtuales (VPN) para eludir restricciones geográficas.</li>
+            </ul>
+        </li>
+        <li><strong>Restricciones:</strong>
+            <ul>
+                <li>Geográficas: Algunos sitios limitan contenido por ubicación.</li>
+                <li>Bloqueos gubernamentales: En países con censura de Internet.</li>
+                <li>Filtros de red: Implementados en escuelas, oficinas o servicios de control parental.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>3. Accesibilidad</h3>
+    <ul>
+        <li><strong>Diseño Inclusivo:</strong> Los sitios deben cumplir con estándares como las Directrices de Accesibilidad para el Contenido Web (WCAG), asegurando que personas con discapacidades puedan interactuar con ellos.</li>
+        <li><strong>Optimización para Dispositivos Móviles:</strong> Con el aumento del acceso desde smartphones, los sitios deben ser responsivos.</li>
+    </ul>
+
+    <hr>
+
+    <h3>4. Seguridad en el Acceso</h3>
+    <ul>
+        <li><strong>Protección de Datos:</strong>
+            <ul>
+                <li>HTTPS encripta las comunicaciones.</li>
+                <li>Políticas de privacidad regulan el uso de datos personales.</li>
+            </ul>
+        </li>
+        <li><strong>Ataques Cibernéticos:</strong> Los usuarios deben protegerse de amenazas como el phishing, malware y spyware.</li>
+    </ul>
+
+    <hr>
+
+    <h3>5. Regulaciones y Legislación</h3>
+    <ul>
+        <li><strong>Regulación Internacional:</strong>
+            <ul>
+                <li>Leyes como el RGPD (Reglamento General de Protección de Datos) en Europa.</li>
+                <li>DMCA (Digital Millennium Copyright Act) en EE.UU.</li>
+            </ul>
+        </li>
+        <li><strong>Censura y Libertad de Expresión:</strong> En algunos países, se restringe el acceso a ciertos sitios web debido a razones políticas, culturales o de seguridad.</li>
+    </ul>
+
+    <hr>
+
+    <h3>6. Perspectivas Futuras</h3>
+    <ul>
+        <li><strong>Mayor Conectividad Global:</strong> Iniciativas como Internet satelital (Starlink) buscan ofrecer acceso a Internet en zonas rurales y remotas.</li>
+        <li><strong>Desarrollo de Tecnologías Avanzadas:</strong> La realidad aumentada y el metaverso influirán en cómo se diseñan y acceden a sitios web.</li>
+    </ul>
+</section>
+
 
         <section id="envio">
-            <h2>Envío de Información a Sitios Web</h2>
-            <p>Cuando interactuamos con sitios web, a menudo enviamos información a través de formularios, como cuando nos registramos en una página o enviamos comentarios. Este proceso se realiza a través de HTTP POST o GET, dependiendo del tipo de acción.</p>
-        </section>
+    <h2>Envío de Información a Sitios Web</h2>
+    <p>
+        El envío de información a sitios web es un proceso fundamental en la interacción usuario-sitio. 
+        Se refiere a cualquier acción mediante la cual un usuario proporciona datos a un sitio web, ya sea de forma manual 
+        (como completar formularios) o automática (por cookies o seguimiento). Este concepto involucra aspectos técnicos, de privacidad y de seguridad.
+    </p>
 
-        <section id="descarga">
-            <h2>Descarga Segura de Archivos</h2>
-            <p>Al descargar archivos de Internet, es importante asegurarse de que provienen de una fuente confiable para evitar malware o virus. Se recomienda verificar la autenticidad del sitio web y utilizar antivirus para escanear los archivos antes de abrirlos.</p>
-        </section>
+    <hr>
 
-        <section id="exploracion">
-            <h2>Exploración de Sitios</h2>
-            <p>Explorar sitios web significa navegar entre las páginas y recursos de un sitio. Esto puede incluir hacer clic en enlaces, visualizar imágenes o videos, y utilizar funcionalidades interactivas como formularios o chatbots.</p>
-        </section>
+    <h3>1. Métodos de Envío de Información</h3>
+    <ul>
+        <li><strong>Formularios Web:</strong>
+            <ul>
+                <li>Campos para introducir datos como texto, archivos, correos electrónicos, etc.</li>
+                <li>Métodos de envío: <code>GET</code> y <code>POST</code> son los más comunes en el protocolo HTTP.</li>
+                <li>Uso de interfaces de usuario (UI) y validación de datos (en cliente y servidor).</li>
+            </ul>
+        </li>
+        <li><strong>Cookies y Seguimiento Automático:</strong>
+            <ul>
+                <li><strong>Cookies:</strong> Archivos almacenados en el navegador que permiten enviar información de sesiones o preferencias al servidor.</li>
+                <li><strong>JavaScript:</strong> Puede capturar interacciones del usuario y enviarlas automáticamente al servidor.</li>
+                <li><strong>APIs:</strong> Herramientas como WebSockets para comunicación en tiempo real.</li>
+            </ul>
+        </li>
+        <li><strong>Subida de Archivos:</strong>
+            <ul>
+                <li>Permite a los usuarios compartir documentos, imágenes o vídeos con el sitio web.</li>
+                <li>Involucra límites de tamaño y verificaciones de seguridad.</li>
+            </ul>
+        </li>
+        <li><strong>APIs y Servicios Externos:</strong>
+            <ul>
+                <li>Aplicaciones como las redes sociales pueden recibir información mediante APIs para integraciones (por ejemplo, compartir contenido).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Protocolo y Seguridad en el Envío</h3>
+    <ul>
+        <li><strong>Protocolo HTTPS:</strong>
+            <ul>
+                <li>Garantiza que la información enviada esté cifrada.</li>
+                <li>Protege contra ataques de intermediarios (man-in-the-middle).</li>
+            </ul>
+        </li>
+        <li><strong>Autenticación:</strong>
+            <ul>
+                <li>Métodos como inicio de sesión (usuario/contraseña) o autenticación en dos pasos.</li>
+            </ul>
+        </li>
+        <li><strong>Protección contra Amenazas:</strong>
+            <ul>
+                <li><strong>Validación del lado del servidor:</strong> Evita ataques como inyección SQL.</li>
+                <li><strong>Tokens de Seguridad (CSRF):</strong> Protegen formularios de envíos no autorizados.</li>
+                <li><strong>CAPTCHA:</strong> Distingue entre usuarios reales y bots.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>3. Privacidad y Regulaciones</h3>
+    <ul>
+        <li><strong>Consentimiento del Usuario:</strong>
+            <ul>
+                <li>Los sitios deben informar sobre cómo usarán los datos mediante políticas de privacidad.</li>
+                <li>Las leyes como el RGPD en Europa requieren que los usuarios otorguen consentimiento explícito antes de compartir información.</li>
+            </ul>
+        </li>
+        <li><strong>Almacenamiento de Datos:</strong>
+            <ul>
+                <li>Es responsabilidad del sitio web garantizar un almacenamiento seguro (por ejemplo, en bases de datos cifradas).</li>
+                <li>Implementación de controles de acceso para evitar filtraciones.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>4. Tipos de Información Comúnmente Enviada</h3>
+    <ul>
+        <li><strong>Información Personal:</strong> Nombre, correo electrónico, teléfono, dirección.</li>
+        <li><strong>Información Financiera:</strong> Datos de tarjetas de crédito o pagos digitales (protegidos mediante encriptación).</li>
+        <li><strong>Preferencias del Usuario:</strong> Encuestas, preferencias de navegación o configuraciones personales.</li>
+        <li><strong>Datos en Tiempo Real:</strong> Chat, ubicación geográfica, seguimiento de actividad.</li>
+    </ul>
+
+    <hr>
+
+    <h3>5. Riesgos Asociados</h3>
+    <ul>
+        <li><strong>Pérdida de Privacidad:</strong> Si el sitio web no es seguro, los datos podrían caer en manos de terceros malintencionados.</li>
+        <li><strong>Ataques de Phishing:</strong> Sitios falsos que recopilan información personal de forma fraudulenta.</li>
+        <li><strong>Mal Uso de Datos:</strong> Algunas empresas pueden vender o compartir información sin el conocimiento del usuario.</li>
+    </ul>
+
+    <hr>
+
+    <h3>6. Perspectivas Futuras</h3>
+    <ul>
+        <li><strong>Encriptación de Extremo a Extremo:</strong> Mayor uso para proteger datos sensibles.</li>
+        <li><strong>Automatización mediante IA:</strong> Formularios y sistemas más intuitivos y seguros.</li>
+        <li><strong>Regulaciones Más Estrictas:</strong> Más países están adoptando leyes de protección de datos.</li>
+    </ul>
+</section>
+
+
+        <section id="descarga-segura">
+    <h2>Descarga Segura de Archivos</h2>
+    <p>
+        La descarga de archivos es una acción común en Internet, pero puede presentar riesgos si no se toman las precauciones adecuadas. 
+        Una descarga segura implica garantizar que el archivo sea auténtico, esté libre de malware y sea transferido de manera segura.
+    </p>
+
+    <hr>
+
+    <h3>1. Principios de la Descarga Segura</h3>
+    <ul>
+        <li><strong>Verificar la Fuente:</strong>
+            <ul>
+                <li>Descarga archivos únicamente de sitios confiables y oficiales.</li>
+                <li>Evita enlaces sospechosos, especialmente en correos electrónicos no solicitados o mensajes en redes sociales.</li>
+            </ul>
+        </li>
+        <li><strong>Protocolo de Transferencia Seguro:</strong>
+            <ul>
+                <li>Prefiere sitios que utilicen HTTPS, lo que asegura que la conexión esté encriptada.</li>
+            </ul>
+        </li>
+        <li><strong>Escaneo de Archivos:</strong>
+            <ul>
+                <li>Utiliza un antivirus o herramientas de seguridad para analizar los archivos descargados antes de abrirlos.</li>
+            </ul>
+        </li>
+        <li><strong>Comprueba el Hash del Archivo:</strong>
+            <ul>
+                <li>Los sitios confiables suelen proporcionar valores hash (MD5, SHA-256) para confirmar que el archivo no ha sido modificado.</li>
+                <li>Usa herramientas para comparar el hash proporcionado con el del archivo descargado.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Tipos de Riesgos en las Descargas</h3>
+    <ul>
+        <li><strong>Malware:</strong> Archivos que contienen virus, spyware, ransomware u otros programas dañinos.</li>
+        <li><strong>Archivos Falsos o Corruptos:</strong> Pueden no funcionar correctamente o ser versiones adulteradas de software legítimo.</li>
+        <li><strong>Phishing:</strong> Enlaces que parecen legítimos pero redirigen a sitios maliciosos para robar información personal.</li>
+        <li><strong>Inyecciones de Código:</strong> Archivos que ejecutan comandos maliciosos al abrirlos, especialmente en documentos como PDFs, Excel o Word.</li>
+    </ul>
+
+    <hr>
+
+    <h3>3. Mejores Prácticas para Descargas Seguras</h3>
+    <ul>
+        <li><strong>Configurar Navegadores y Sistemas Operativos:</strong>
+            <ul>
+                <li>Activa alertas de seguridad para descargas sospechosas.</li>
+                <li>Mantén actualizado el navegador y el sistema operativo para protegerte contra vulnerabilidades.</li>
+            </ul>
+        </li>
+        <li><strong>Usar Software Antivirus y Antimalware:</strong>
+            <ul>
+                <li>Escanea automáticamente las descargas antes de abrirlas.</li>
+                <li>Configura el antivirus para bloquear sitios inseguros.</li>
+            </ul>
+        </li>
+        <li><strong>Evitar Descargas Automáticas:</strong>
+            <ul>
+                <li>No permitas que los sitios web inicien descargas sin tu consentimiento explícito.</li>
+            </ul>
+        </li>
+        <li><strong>Revisar las Extensiones de Archivos:</strong>
+            <ul>
+                <li>Cuidado con extensiones dobles como <code>imagen.jpg.exe</code>, ya que son indicativos de archivos maliciosos.</li>
+                <li>Evita ejecutar archivos <code>.exe</code>, <code>.bat</code>, <code>.msi</code>, a menos que confíes plenamente en el origen.</li>
+            </ul>
+        </li>
+        <li><strong>Uso de Sandboxes o Máquinas Virtuales:</strong>
+            <ul>
+                <li>Abre archivos sospechosos en un entorno aislado para evitar comprometer el sistema principal.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>4. Herramientas Útiles para Descargas Seguras</h3>
+    <ul>
+        <li><strong>Antivirus y Seguridad:</strong> <em>Windows Defender</em>, <em>Avast</em>, <em>Kaspersky</em>, <em>Norton</em>, etc.</li>
+        <li><strong>Escáneres en Línea:</strong> <em>VirusTotal</em>: Escanea enlaces y archivos antes de descargarlos o ejecutarlos.</li>
+        <li><strong>Gestores de Descargas:</strong> Utiliza herramientas como <em>JDownloader</em> que verifican automáticamente la integridad del archivo.</li>
+        <li><strong>Complementos del Navegador:</strong> Extensiones como <em>HTTPS Everywhere</em> o <em>NoScript</em> para garantizar conexiones seguras y prevenir la ejecución de scripts no deseados.</li>
+    </ul>
+
+    <hr>
+
+    <h3>5. Consejos Avanzados para Usuarios Técnicos</h3>
+    <ul>
+        <li><strong>Cifrado de Descargas:</strong> Verifica si el archivo está firmado digitalmente para garantizar su autenticidad.</li>
+        <li><strong>Monitoreo de Red:</strong> Usa herramientas como <em>Wireshark</em> para detectar posibles redirecciones o actividades sospechosas durante la descarga.</li>
+        <li><strong>Auditoría de Archivos:</strong> En entornos Linux o Unix, utiliza comandos como <code>chmod</code> o <code>file</code> para verificar la naturaleza de un archivo antes de ejecutarlo.</li>
+    </ul>
+</section>
+
+
+        <section id="exploracion-segura">
+    <h2>Exploración de Sitios Web</h2>
+    <p>
+        La exploración de sitios web consiste en la interacción de un usuario con diferentes páginas en línea, ya sea para buscar información, consumir contenido, realizar compras o simplemente navegar. 
+        Este proceso puede ser enriquecido con técnicas y herramientas que optimizan la experiencia, al tiempo que garantizan la seguridad y privacidad.
+    </p>
+
+    <hr>
+
+    <h3>1. Tipos de Exploración de Sitios</h3>
+    <ul>
+        <li><strong>Exploración General:</strong>
+            <ul>
+                <li>Realizar búsquedas en motores como Google o Bing.</li>
+                <li>Navegar por sitios informativos, educativos, comerciales o de entretenimiento.</li>
+            </ul>
+        </li>
+        <li><strong>Exploración Dirigida:</strong>
+            <ul>
+                <li>Buscar contenido específico en bases de datos, bibliotecas digitales o redes académicas.</li>
+                <li>Utilizar filtros y herramientas avanzadas para encontrar recursos relevantes.</li>
+            </ul>
+        </li>
+        <li><strong>Exploración Técnica (Web Scraping):</strong>
+            <ul>
+                <li>Usar scripts o herramientas para recopilar datos estructurados de sitios web.</li>
+                <li>Respetar las políticas de uso de los sitios para evitar problemas legales.</li>
+            </ul>
+        </li>
+        <li><strong>Exploración Privada:</strong>
+            <ul>
+                <li>Uso de navegadores con modos de privacidad (incógnito) o herramientas como Tor para anonimizar la navegación.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>2. Elementos Clave para una Exploración Eficiente</h3>
+    <ul>
+        <li><strong>Herramientas de Navegación:</strong>
+            <ul>
+                <li>Navegadores como Chrome, Firefox, Edge o Safari, con extensiones que mejoran la funcionalidad.</li>
+                <li>Configuración de marcadores y organización de pestañas.</li>
+            </ul>
+        </li>
+        <li><strong>Optimización de Motores de Búsqueda:</strong>
+            <ul>
+                <li>Uso de operadores de búsqueda avanzada (<code>site:</code>, <code>"palabras exactas"</code>, <code>-excluir</code>, etc.).</li>
+                <li>Filtrado por fechas, tipos de archivo o ubicación geográfica.</li>
+            </ul>
+        </li>
+        <li><strong>Conexión Segura:</strong>
+            <ul>
+                <li>Priorizar sitios con protocolo HTTPS para proteger los datos transmitidos.</li>
+                <li>Uso de VPN para explorar contenido restringido geográficamente o proteger la privacidad.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>3. Seguridad Durante la Exploración</h3>
+    <ul>
+        <li><strong>Evitar Enlaces Sospechosos:</strong>
+            <ul>
+                <li>No hacer clic en anuncios emergentes o enlaces acortados desconocidos.</li>
+                <li>Verificar URLs antes de ingresar información personal.</li>
+            </ul>
+        </li>
+        <li><strong>Protección Contra Malware:</strong>
+            <ul>
+                <li>Instalar extensiones que bloqueen sitios peligrosos (como <em>uBlock Origin</em> o <em>AdBlock</em>).</li>
+                <li>Mantener actualizado el sistema operativo y el navegador.</li>
+            </ul>
+        </li>
+        <li><strong>Prevención de Rastreo:</strong>
+            <ul>
+                <li>Usar bloqueadores de rastreo como <em>Privacy Badger</em> o habilitar "No rastrear" en la configuración del navegador.</li>
+                <li>Eliminar cookies y caché periódicamente.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>4. Exploración Ética y Legal</h3>
+    <ul>
+        <li><strong>Respetar los Términos de Uso:</strong>
+            <ul>
+                <li>Leer y cumplir las políticas de uso de los sitios, especialmente al interactuar con datos sensibles o privados.</li>
+            </ul>
+        </li>
+        <li><strong>Evitar el Plagio o Uso Indebido de Contenido:</strong>
+            <ul>
+                <li>Atribuir las fuentes correctamente y no usar contenido protegido por derechos de autor sin permiso.</li>
+            </ul>
+        </li>
+        <li><strong>Cumplir Regulaciones Locales:</strong>
+            <ul>
+                <li>Ser consciente de leyes como el RGPD (protección de datos en Europa) y restricciones de contenido en ciertos países.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <h3>5. Herramientas para Mejorar la Exploración</h3>
+    <ul>
+        <li><strong>Gestión de Contraseñas:</strong> Aplicaciones como <em>LastPass</em> o <em>Dashlane</em> para manejar accesos de manera segura.</li>
+        <li><strong>Modo de Lectura:</strong> Usar funciones del navegador que eliminan distracciones para enfocarse en el contenido.</li>
+        <li><strong>Extensiones de Navegador:</strong> Traductores automáticos, bloqueadores de anuncios, correctores ortográficos, etc.</li>
+        <li><strong>Exploración Avanzada:</strong> <em>Wayback Machine</em> para consultar versiones antiguas de sitios web.</li>
+    </ul>
+
+    <hr>
+
+    <h3>6. Privacidad y Anonimato</h3>
+    <ul>
+        <li><strong>Modo Incógnito:</strong> Navegar sin guardar historial, cookies o datos de inicio de sesión.</li>
+        <li><strong>Red Tor:</strong> Permite navegar con anonimato en Internet y acceder a la red profunda.</li>
+        <li><strong>Buscadores Privados:</strong> Alternativas como <em>DuckDuckGo</em> o <em>Startpage</em> que no registran datos personales.</li>
+    </ul>
+
+    <hr>
+
+    <h3>7. Tendencias y Perspectivas Futuras</h3>
+    <ul>
+        <li><strong>Exploración en el Metaverso:</strong> Navegación inmersiva en entornos 3D interactivos.</li>
+        <li><strong>Automatización e IA:</strong> Motores de búsqueda que entienden preguntas complejas y contextos.</li>
+        <li><strong>Exploración Segura Global:</strong> Crecimiento del acceso a Internet seguro mediante proyectos como Starlink o redes 5G.</li>
+    </ul>
+</section>
+<section id="integrantes">
+        <h2>Integrantes del Team</h2>
+        <ul>
+            <li>Roblox</li>
+            <li>Fortnite</li>
+            <li>Skibidi</li>
+	</ul>
+    	</section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Navegación en Internet. Todos los derechos reservados.</p>
-    </footer>
 
 </body>
 </html>
